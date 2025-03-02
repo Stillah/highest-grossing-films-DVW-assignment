@@ -15,11 +15,12 @@
             <input type="text" id="search" placeholder="Search by title..." oninput="filterFilms()">
             <select id="sort" onchange="sortFilms()">
                 <option value="title-asc">Title (A-Z)</option>
-                <option value="title-desc">Title (Z-A)</option>
                 <option value="year-asc">Release Year (Oldest First)</option>
                 <option value="year-desc">Release Year (Newest First)</option>
                 <option value="box-office-asc">Box Office (Low to High)</option>
                 <option value="box-office-desc">Box Office (High to Low)</option>
+                <option value="director-asc">Director(s) (A-Z)</option>
+                <option value="country-asc">Countries of Origin (A-Z)</option>
             </select>
         </div>
 
@@ -30,7 +31,7 @@
                     <th>Rank</th>
                     <th>Title</th>
                     <th>Release Year</th>
-                    <th>Director</th>
+                    <th>Director(s)</th>
                     <th>Box Office Revenue</th>
                     <th>Countries of Origin</th>
                 </tr>
