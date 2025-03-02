@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Film Database</h1>
+        
+        <!-- Filter and Sort Controls -->
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by title..." oninput="filterFilms()">
+            <select id="sort" onchange="sortFilms()">
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="title-desc">Title (Z-A)</option>
+                <option value="year-asc">Release Year (Oldest First)</option>
+                <option value="year-desc">Release Year (Newest First)</option>
+                <option value="box-office-asc">Box Office (Low to High)</option>
+                <option value="box-office-desc">Box Office (High to Low)</option>
+            </select>
+        </div>
+
+        <!-- Table to Display Films -->
+        <table id="films-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Release Year</th>
+                    <th>Director</th>
+                    <th>Box Office</th>
+                </tr>
+            </thead>
+            <tbody id="films-body">
+                <!-- Rows will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
