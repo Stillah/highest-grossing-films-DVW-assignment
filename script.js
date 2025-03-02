@@ -20,7 +20,7 @@ function displayFilms(films) {
             <td>${film.title}</td>
             <td>${film.release_year}</td>
             <td>${film.director}</td>
-            <td>${film.box_office_revenue.toLocaleString()}</td>
+            <td>${film.box_office.toLocaleString()}</td> <!-- $ removed here -->
         `;
         filmsBody.appendChild(row);
     });
@@ -51,11 +51,11 @@ function sortFilms() {
         case 'year-desc':
             sortedFilms.sort((a, b) => b.release_year - a.release_year);
             break;
-        case 'box-office-revenue-asc':
-            sortedFilms.sort((a, b) => a.box_office_revenue - b.box_office_revenue);
+        case 'box-office-asc':
+            sortedFilms.sort((a, b) => a.box_office - b.box_office);
             break;
-        case 'box-office-revenue-desc':
-            sortedFilms.sort((a, b) => b.box_office_revenue - a.box_office_revenue);
+        case 'box-office-desc':
+            sortedFilms.sort((a, b) => b.box_office - a.box_office);
             break;
     }
 
