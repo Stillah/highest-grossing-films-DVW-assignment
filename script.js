@@ -17,10 +17,12 @@ function displayFilms(films) {
     films.forEach(film => {
         const row = document.createElement('tr');
         row.innerHTML = `
+            <td>${film.id}</td> <!-- New column -->
             <td>${film.title}</td>
             <td>${film.release_year}</td>
             <td>${film.director}</td>
             <td>${film.box_office.toLocaleString()}</td>
+            <td>${film.country}</td>
         `;
         filmsBody.appendChild(row);
     });
