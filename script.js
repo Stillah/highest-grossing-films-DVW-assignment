@@ -59,6 +59,12 @@ function sortFilms() {
         case 'box-office-desc':
             sortedFilms.sort((a, b) => b.id - a.id);
             break;
+        case 'director-asc':
+            sortedFilms.sort((a, b) => a.director.localeCompare(b.director)); // Sort by Director (A-Z)
+            break;
+        case 'country-asc':
+            sortedFilms.sort((a, b) => a.country.localeCompare(b.country)); // Sort by Country (A-Z)
+            break;
     }
 
     displayFilms(sortedFilms);
