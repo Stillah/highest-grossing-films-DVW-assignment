@@ -54,10 +54,10 @@ function sortFilms() {
             sortedFilms.sort((a, b) => b.release_year - a.release_year);
             break;
         case 'box-office-asc':
-            sortedFilms.sort((a, b) => a.box_office - b.box_office);
+            sortedFilms.sort((a, b) => a.id - b.id);
             break;
         case 'box-office-desc':
-            sortedFilms.sort((a, b) => b.box_office - a.box_office);
+            sortedFilms.sort((a, b) => b.id - a.id);
             break;
     }
 
