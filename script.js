@@ -20,7 +20,7 @@ function displayFilms(films) {
             <td>${film.title}</td>
             <td>${film.release_year}</td>
             <td>${film.director}</td>
-            <td>$${film.box_office.toLocaleString()}</td>
+            <td>${film.box_office.toLocaleString()}</td>
         `;
         filmsBody.appendChild(row);
     });
