@@ -45,14 +45,14 @@ h1 {
 /* Table Styles */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Ensures borders are merged */
     margin-top: 20px;
 }
 
 th, td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd; /* Add borders to all cells */
 }
 
 th {
