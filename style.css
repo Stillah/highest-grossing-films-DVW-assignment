@@ -43,23 +43,24 @@ h1 {
 }
 
 /* Table Styles */
-table {
+table#films-table {
     width: 100%;
     border-collapse: collapse; /* Ensures borders are merged */
     margin-top: 20px;
 }
 
-th, td {
+table#films-table th,
+table#films-table td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd; /* Add borders to all cells */
 }
 
-th {
+table#films-table th {
     background-color: #f8f9fa;
     font-weight: bold;
 }
 
-tr:hover {
+table#films-table tr:hover {
     background-color: #f1f1f1;
 }
